@@ -23,7 +23,6 @@ The main goal of Hexagonal Architecture is to **isolate core business logic (the
 - **Multiple Inbound Adapters**: REST and Kafka use the same `SendNotificationUseCase`.  
 - **Plug & Play Outbound Adapters**: `List<NotificationDispatcher>` allows adding channels easily.  
 - **Mocked Adapters**: Twilio, SendGrid, and Slack are simulated and log to the console.  
-- **Clean Error Handling**: REST adapter maps domain exceptions to HTTP status codes (`@ControllerAdvice`).  
 
 ---
 
